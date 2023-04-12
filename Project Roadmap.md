@@ -2,7 +2,7 @@
 - [ ] Create Repository in Organization
 - [ ] Create Readme.md
 - [ ] Create Project Roadmap
-- [ ] Find Tutorial For Base of Code
+- [ ] Find Tutorial For Base of Code: https://www.youtube.com/watch?v=OPUSBBD2OJw
 - [ ] Setup GUI
 - [ ] Create Function For Dropdown Menu
 - [ ] Create Functions For Code to Interact
