@@ -28,10 +28,10 @@ def select(event):
     elif selected.get() == "Antarctica":
         myLabel = Label(root, text="Pick a number (0):").pack()
     else:
-        myLabel = Label(root, text=selected.get()).pack().pack()
+        myLabel = Label(root, text=selected.get()).pack()
         
 options = [
-    "Pick A Continenet",
+    "Pick A Continent",
     "South America",
     "North America",
     "Africa",
