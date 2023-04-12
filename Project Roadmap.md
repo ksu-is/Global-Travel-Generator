@@ -1,4 +1,11 @@
 Project Roadmap
-- [ ] Setup Gui
-- [ ] Create Main Code Compnenet
-- [ ] Put Code Together
+- [ ] Create Repository in Organization
+- [ ] Create Readme.md
+- [ ] Create Project Roadmap
+- [ ] Find Tutorial For Base of Code
+- [ ] Setup GUI
+- [ ] Create Function For Dropdown Menu
+- [ ] Create Functions For Code to Interact
+- [ ] Check If Code Works Cohesively
+- [ ] Make Edits to Code
+- [ ] Put Final Code in Repository
