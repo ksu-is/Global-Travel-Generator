@@ -51,5 +51,5 @@ menu.pack(pady=20)
 #myButton = Button(root, text="Click to select continent", commmand=select)
 #myButton.pack()
 
-
+ 
 root.mainloop()
