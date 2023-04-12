@@ -1,10 +1,10 @@
 **Project Roadmap**
-- [ ] Create Repository in Organization
-- [ ] Create Readme.md
-- [ ] Create Project Roadmap
-- [ ] Find Tutorial For Base of Code: https://www.youtube.com/watch?v=OPUSBBD2OJw
-- [ ] Setup GUI
-- [ ] Create Function For Dropdown Menu
+- [x] Create Repository in Organization
+- [x] Create Readme.md
+- [x] Create Project Roadmap
+- [x] Find Tutorial For Base of Code: https://www.youtube.com/watch?v=OPUSBBD2OJw
+- [x] Setup GUI
+- [x] Create Function For Dropdown Menu
 - [ ] Create Functions For Code to Interact
 - [ ] Check If Code Works Cohesively
 - [ ] Make Edits to Code
