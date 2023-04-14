@@ -15,18 +15,39 @@ def select(event):
     if selected.get() == "South America":
         myLabel = Label(root, text="Pick a number(0-11): ",bg='#FFBFA9', font=("fangsong ti", 15))
         myLabel.pack()
+        number_spin1.pack(pady=45)
+        myButton = Button(root, text="Click To Generate Country", command=select)
+        myButton.pack()
     elif  selected.get() == "North America":
         myLabel = Label(root, text="Pick a number (0-50):").pack()
+        number_spin1.pack(pady=45)
+        myButton = Button(root, text="Click To Generate Country", command=select)
+        myButton.pack()
     elif selected.get() == "Africa":
         myLabel = Label(root, text= "Pick a number (0-30):").pack()
+        number_spin1.pack(pady=45)
+        myButton = Button(root, text="Click To Generate Country", command=select)
+        myButton.pack()
     elif selected.get() == "Europe":
         myLabel = Label(root, text="Pick a number (0-30):").pack()
+        number_spin1.pack(pady=45)
+        myButton = Button(root, text="Click To Generate Country", command=select)
+        myButton.pack()
     elif selected.get() == "Asia":
         myLabel = Label(root, text="Pick a number (0-31):").pack()
+        number_spin1.pack(pady=45)
+        myButton = Button(root, text="Click To Generate Country", command=select)
+        myButton.pack()
     elif selected.get() == "Australia":
         myLabel = Label(root, text="Pick a number (0-5):").pack()
+        number_spin1.pack(pady=45)
+        myButton = Button(root, text="Click To Generate Country", command=select)
+        myButton.pack()
     elif selected.get() == "Antarctica":
         myLabel = Label(root, text="Pick a number (0):").pack()
+        number_spin1.pack(pady=45)
+        myButton = Button(root, text="Click To Generate Country", command=select)
+        myButton.pack()
     else:
         myLabel = Label(root, text=selected.get()).pack()
         
