@@ -5,8 +5,8 @@
 - [x] Find Tutorial For Base of Code: https://www.youtube.com/watch?v=OPUSBBD2OJw
 - [x] Setup GUI
 - [x] Create Function For Dropdown Menu
-- [ ] Link The Continents with the Dropdown Menu
-- [ ] Create Button To Generate Country/State
+- [x] Link The Continents with the Dropdown Menu
+- [x] Create Button To Generate Country/State
 - [ ] Link the Button To the Country/State
 - [ ] Create the Ability for Program to Reset After a Place is Genereated
 - [ ] Create Functions For Code to Interact
