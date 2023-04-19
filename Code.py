@@ -8,6 +8,9 @@ root.geometry("600x400")
 topLabel = Label(root, text="Global Travel Generator!", background="#FFBFA9", font=("fangsong ti", 30))
 topLabel.pack(pady=35)
 
+def button():
+myButton = Button(root, text="Click To Generate Country", command=select)
+myButton.pack()
 
 #When user selects continent from dropdown the range in which the a user should enter a number will show up.
 def select(event):
@@ -16,38 +19,31 @@ def select(event):
         myLabel = Label(root, text="Pick a number(0-11): ",bg='#FFBFA9', font=("fangsong ti", 15))
         myLabel.pack()
         number_spin1.pack(pady=45)
-        myButton = Button(root, text="Click To Generate Country", command=select)
-        myButton.pack()
+        button()
     elif  selected.get() == "North America":
         myLabel = Label(root, text="Pick a number (0-50):").pack()
         number_spin1.pack(pady=45)
-        myButton = Button(root, text="Click To Generate Country", command=select)
-        myButton.pack()
+        button()
     elif selected.get() == "Africa":
         myLabel = Label(root, text= "Pick a number (0-30):").pack()
         number_spin1.pack(pady=45)
-        myButton = Button(root, text="Click To Generate Country", command=select)
-        myButton.pack()
+        button()
     elif selected.get() == "Europe":
         myLabel = Label(root, text="Pick a number (0-30):").pack()
         number_spin1.pack(pady=45)
-        myButton = Button(root, text="Click To Generate Country", command=select)
-        myButton.pack()
+        button()
     elif selected.get() == "Asia":
         myLabel = Label(root, text="Pick a number (0-31):").pack()
         number_spin1.pack(pady=45)
-        myButton = Button(root, text="Click To Generate Country", command=select)
-        myButton.pack()
+        button()
     elif selected.get() == "Australia":
         myLabel = Label(root, text="Pick a number (0-5):").pack()
         number_spin1.pack(pady=45)
-        myButton = Button(root, text="Click To Generate Country", command=select)
-        myButton.pack()
+        button()
     elif selected.get() == "Antarctica":
         myLabel = Label(root, text="Pick a number (0):").pack()
         number_spin1.pack(pady=45)
-        myButton = Button(root, text="Click To Generate Country", command=select)
-        myButton.pack()
+        button()
     else:
         myLabel = Label(root, text=selected.get()).pack()
         
