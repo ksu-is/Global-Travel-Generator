@@ -7,7 +7,7 @@
 - [x] Create Function For Dropdown Menu
 - [x] Link The Continents with the Dropdown Menu
 - [x] Create Button To Generate Country/State
-- [ ] Link the Button To the Country/State
+- [x] Link the Button To the Country/State
 - [ ] Create the Ability for Program to Reset After a Place is Genereated
 - [ ] Create Functions For Code to Interact
 - [ ] Check If Code Works Cohesively
