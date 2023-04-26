@@ -12,13 +12,13 @@ class Travel_Explorer(Tk):
         
         self.label1 = Label(self, text= "Global Travel Option Explorer!", background="#FFBFA9", font=("Ink Free", 23))
         self.label1.pack(pady=10)
-        self.states = ["Alabamba", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Deleware", "Flordia", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts","Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virgina", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
-        self.sacountries = ["Columbia", "Ecuador", "Bolivia", "Brazil", "Argentina", "Venezuela", "Chile", "Paraguay", "Peru", "Uruguay", "Suriname", "Guyana"]
-        self.eu =[ "Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bosnia & Herzegovina", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Georgia", "Germany", "Greece", "Hungary","Iceland", "Ireland", "Italy", "Kosovo", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta", "Moldova","Monaco", "Montenegro", "Netherlands", "North Macedonia", "Norway", "Poland", "Portugal", "Romania", "Russia", "San Marino", "Serbia", "Slovakia", "Slovenia","Spain", "Sweden", "Switzerland", "Turkey", "Ukraine", "United Kingdom", "Vatican City"]
-        self.acountries = ["New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Autstrlia"]
-        self.afcountries = ["Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cabo Verde", "Cameroon", "Central African Republic (CAR)", "Chad", "Comoros", "Democratic Republic of the Congo", "Republic of the Congo", "Cote d'Ivoire", "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini (formerly Swaziland)", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique","Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe", "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe"]
-        self.ascountries = ["China", "India", "Indonesia", "Pakistan", "Bangladesh", "Japan", "Philippines", "Vietnam", "Turkey", "Iran", "Thailand", "South Korea", "Afganistan", "Saudi Arabia", "Uzbekistan", "Malaysia", "Yemen", "Nepal"," Sri Lanka", "Kazakhstan", "Syria", "Cambodia", "Jordan", "Isereal", "Laos", "Lebanon", "Singapore", "Georgia", "Mongolia", "Armenia", "Bhutan", "Maldives"]
-        self.antcountries = ["Antartica"]
+        self.states = ["","Alabamba", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Deleware", "Flordia", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts","Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virgina", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
+        self.sacountries = ["","Columbia", "Ecuador", "Bolivia", "Brazil", "Argentina", "Venezuela", "Chile", "Paraguay", "Peru", "Uruguay", "Suriname", "Guyana"]
+        self.eu =["","Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bosnia & Herzegovina", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Georgia", "Germany", "Greece", "Hungary","Iceland", "Ireland", "Italy", "Kosovo", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta", "Moldova","Monaco", "Montenegro", "Netherlands", "North Macedonia", "Norway", "Poland", "Portugal", "Romania", "Russia", "San Marino", "Serbia", "Slovakia", "Slovenia","Spain", "Sweden", "Switzerland", "Turkey", "Ukraine", "United Kingdom", "Vatican City"]
+        self.acountries = ["","New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Autstrlia"]
+        self.afcountries = ["","Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cabo Verde", "Cameroon", "Central African Republic (CAR)", "Chad", "Comoros", "Democratic Republic of the Congo", "Republic of the Congo", "Cote d'Ivoire", "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini (formerly Swaziland)", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique","Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe", "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe"]
+        self.ascountries = ["","China", "India", "Indonesia", "Pakistan", "Bangladesh", "Japan", "Philippines", "Vietnam", "Turkey", "Iran", "Thailand", "South Korea", "Afganistan", "Saudi Arabia", "Uzbekistan", "Malaysia", "Yemen", "Nepal"," Sri Lanka", "Kazakhstan", "Syria", "Cambodia", "Jordan", "Isereal", "Laos", "Lebanon", "Singapore", "Georgia", "Mongolia", "Armenia", "Bhutan", "Maldives"]
+        self.antcountries = ["","Antartica"]
         self.continents=["Africa","Antartica","Asia", "Australia","Europe","North America", "South America"]
         self.choose_continent()
         
@@ -72,8 +72,7 @@ class Travel_Explorer(Tk):
         elif self.selected_continent.get() == "Australia":
             label8 = Label(self.master, text="Pick a number (1-4):", background="#FFBFA9", font=("Ink Free", 20))
             label8.pack()
-            self.australia()
-    
+            self.australia() 
     
     def north_america(self, *args):
         #number2 = int(self.choose_country.get())-1
@@ -86,6 +85,7 @@ class Travel_Explorer(Tk):
             #command=self.show_state
         )
         self.state_options.pack()
+
 
     def south_america(self, *args):
         self.selected_sacountries= StringVar()
@@ -107,6 +107,7 @@ class Travel_Explorer(Tk):
             *range(len(self.ascountries))
         )
         self.asia_options.pack()
+
 
     def europe(self, *args):
         self.selected_europe= StringVar()
