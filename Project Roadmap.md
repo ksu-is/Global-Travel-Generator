@@ -8,9 +8,8 @@
 - [x] Link The Continents with the Dropdown Menu
 - [x] Create Button To Generate Country/State
 - [x] Link the Button To the Country/State
-- [ ] Create the Ability for Program to Reset After a Place is Genereated
-- [ ] Create Functions For Code to Interact
-- [ ] Check If Code Works Cohesively
+- [x] Create Functions For Code to Interact
+- [x] Check If Code Works Cohesively
 - [ ] Make Edits to Code
 - [ ] Add Details
 - [ ] Put Final Code in Repository
