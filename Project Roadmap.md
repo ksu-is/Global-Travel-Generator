@@ -10,6 +10,6 @@
 - [x] Link the Button To the Country/State
 - [x] Create Functions For Code to Interact
 - [x] Check If Code Works Cohesively
-- [ ] Make Edits to Code
+- [x] Make Edits to Code
 - [ ] Add Details
 - [ ] Put Final Code in Repository
